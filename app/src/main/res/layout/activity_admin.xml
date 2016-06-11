@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.simplifiedcoding.mysqlcrud.AdminActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Bazar Alarm"
+        android:id="@+id/buttonAdminBAlarm"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per Meal"
+        android:id="@+id/buttonAdminPerMeal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignTop="@+id/buttonAdminBAlarm"
+        android:layout_toRightOf="@+id/buttonAdminBAlarm" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Meal"
+        android:id="@+id/buttonAdminMMeal"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/buttonAdminBAlarm"
+        android:layout_alignLeft="@+id/buttonAdminBAlarm"
+        android:layout_alignStart="@+id/buttonAdminBAlarm"
+        android:layout_toLeftOf="@+id/buttonAdminPerMeal"
+        android:layout_toStartOf="@+id/buttonAdminPerMeal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly Expense"
+        android:id="@+id/buttonAdminMExpense"
+        android:layout_alignTop="@+id/buttonAdminMMeal"
+        android:layout_alignLeft="@+id/buttonAdminPerMeal"
+        android:layout_alignStart="@+id/buttonAdminPerMeal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start New Month"
+        android:id="@+id/buttonAdminNewMonth"
+        android:layout_alignBottom="@+id/buttonAdminHistory"
+        android:layout_alignLeft="@+id/buttonAdminMMeal"
+        android:layout_alignStart="@+id/buttonAdminMMeal"
+        android:layout_toLeftOf="@+id/buttonAdminPerMeal"
+        android:layout_toStartOf="@+id/buttonAdminPerMeal"
+        android:layout_alignTop="@+id/buttonAdminHistory" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/buttonAdminHistory"
+        android:layout_below="@+id/buttonAdminMExpense"
+        android:layout_marginTop="36dp"
+        android:layout_alignLeft="@+id/buttonAdminMExpense"
+        android:layout_alignStart="@+id/buttonAdminMExpense"
+        android:layout_alignRight="@+id/buttonAdminMExpense"
+        android:layout_alignEnd="@+id/buttonAdminMExpense" />
+</RelativeLayout>

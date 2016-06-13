@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,17 +27,13 @@
             android:name=".ViewAllEmployee"
             android:label="@string/title_activity_view_all_employee"
             android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="net.simplifiedcoding.mysqlcrud.MainActivity" />
         </activity>
         <activity
             android:name=".ViewEmployee"
             android:label="@string/title_activity_view_employee"
+            android:windowSoftInputMode="adjustNothing"
             android:parentActivityName=".ViewAllEmployee" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
+
         <activity android:name=".RegisterMess" />
         <activity android:name=".CreateMess" />
         <activity android:name=".JoinMess" />

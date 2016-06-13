@@ -59,7 +59,7 @@ public class ViewAllEmployee extends AppCompatActivity implements ListView.OnIte
         ListAdapter adapter = new SimpleAdapter(
                 ViewAllEmployee.this, list, R.layout.list_item,
                 new String[]{Config_DBConnection.TAG_ID, Config_DBConnection.TAG_NAME},
-                new int[]{R.id.id, R.id.name});
+                new int[]{R.id.name, R.id.name});
 
         listView.setAdapter(adapter);
     }
@@ -85,7 +85,7 @@ public class ViewAllEmployee extends AppCompatActivity implements ListView.OnIte
             @Override
             protected String doInBackground(Void... params) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest(Config_DBConnection.URL_GET_ALL);
+                String s = rh.sendGetRequest(Config_DBConnection.URL_GET_USERS);
                 return s;
             }
         }

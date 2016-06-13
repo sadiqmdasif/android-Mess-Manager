@@ -20,7 +20,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
+        android:id="@+id/editTextMessName"
         android:layout_alignParentTop="true"
         android:layout_marginTop="75dp"
         android:layout_alignLeft="@+id/buttonMessRegCreate"
@@ -31,10 +31,10 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
+        android:id="@+id/editTextMessMember"
+        android:layout_below="@+id/editTextMessName"
+        android:layout_alignLeft="@+id/editTextMessName"
+        android:layout_alignStart="@+id/editTextMessName"
         android:layout_marginTop="34dp"
         android:hint="Total Member"
         android:inputType="number" />

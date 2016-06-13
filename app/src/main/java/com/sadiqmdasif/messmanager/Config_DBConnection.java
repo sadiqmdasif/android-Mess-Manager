@@ -5,8 +5,12 @@ package com.sadiqmdasif.messmanager;
  */
 public class Config_DBConnection {
     //Address of our scripts of the CRUD
-    public static final String URL_ADD="http://sadiqmdasif.net16.net/billsplit/addEmp.php";
-    public static final String URL_GET_ALL = "http://sadiqmdasif.net16.net/billsplit/getAllEmp.php";
+    public static final String URL_ADD="http://sadiqmdasif.net16.net/billsplit/addMess.php";
+    public static final String URL_ADD_MEMBER_TO_MESS="http://sadiqmdasif.net16.net/billsplit/addMemberToMess.php";
+
+    public static final String URL_GET_USERS = "http://sadiqmdasif.net16.net/billsplit/getAllUser.php";
+    public static final String URL_GET_MESS = "http://sadiqmdasif.net16.net/billsplit/getAllMess.php";
+
     public static final String URL_GET_EMP = "http://sadiqmdasif.net16.net/billsplit/getEmp.php?id=";
     public static final String URL_UPDATE_EMP = "http://sadiqmdasif.net16.net/billsplit/updateEmp.php";
     public static final String URL_DELETE_EMP = "http://sadiqmdasif.net16.net/billsplit/deleteEmp.php?id=";
@@ -23,6 +27,8 @@ public class Config_DBConnection {
     public static final String TAG_NAME = "name";
     public static final String TAG_DESG = "desg";
     public static final String TAG_SAL = "salary";
+    public static final String TAG_MEMBER = "member";
+    public static final String TAG_MESSID = "messID";
 
     //employee id to pass with intent
     public static final String EMP_ID = "emp_id";
